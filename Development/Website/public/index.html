@@ -1,0 +1,71 @@
+ <!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Car Transko - Auto Transport Category Bootstrap Responsive Template | Home :: W3layouts </title>
+    <!-- google fonts -->
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+   
+  </body>
+   <!-- Template JavaScript -->
+   <script src="assets/js/jquery-3.3.1.min.js"></script>
+   <script src="assets/js/theme-change.js"></script>
+  
+   <!-- MENU-JS -->
+   <script>
+       $(window).on("scroll", function() {
+           var scroll = $(window).scrollTop();
+
+           if (scroll >= 80) {
+               $("#site-header").addClass("nav-fixed");
+           } else {
+               $("#site-header").removeClass("nav-fixed");
+           }
+       });
+       //Main navigation Active Class Add Remove
+       $(".navbar-toggler").on("click", function() {
+           $("header").toggleClass("active");
+       });
+       $(document).on("ready", function() {
+           if ($(window).width() > 991) {
+               $("header").removeClass("active");
+           }
+           $(window).on("resize", function() {
+               if ($(window).width() > 991) {
+                   $("header").removeClass("active");
+               }
+           });
+       });
+
+   </script>
+   <!-- //MENU-JS -->
+   <!-- disable body scroll which navbar is in active -->
+   <script>
+       $(function() {
+           $('.navbar-toggler').click(function() {
+               $('body').toggleClass('noscroll');
+           })
+       });
+
+   </script>
+   <!-- //disable body scroll which navbar is in active -->
+   <!-- //bootstrap -->
+   <script src="assets/js/bootstrap.min.js"></script>
+</html>
